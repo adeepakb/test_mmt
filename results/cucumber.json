@@ -1,0 +1,141 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-11-01T08:45:26.454Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8531000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.framework.selenium.steps.BaseSteps.logBeforeScenario(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 5277611000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.framework.selenium.steps.BaseSteps.initializeDriver()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1560000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.framework.selenium.runners.SpringBootRunner.setupCucumberSpringContext()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "User can do a search from the home page",
+        "description": "",
+        "id": "home-page-search-tests;user-can-do-a-search-from-the-home-page",
+        "after": [
+          {
+            "result": {
+              "duration": 2400000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.framework.selenium.steps.BaseSteps.logAfterScenario(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 167908000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.framework.selenium.steps.BaseSteps.closeDriver(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7792737000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I search flight from \"New Delhi\" to \"Bengaluru\" in the search input of the home page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "New Delhi",
+                  "offset": 22
+                },
+                {
+                  "val": "Bengaluru",
+                  "offset": 37
+                }
+              ],
+              "location": "com.framework.selenium.steps.HomeSteps.iSearchInTheSearchInputOfTheHomePage(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 503176000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I select \"2\" passangers and \"Economy\" class",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 10
+                },
+                {
+                  "val": "Economy",
+                  "offset": 29
+                }
+              ],
+              "location": "com.framework.selenium.steps.HomeSteps.iPressTheSearhButtonInTheHomePage(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 35353781000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I press the search button in the home page",
+            "match": {
+              "location": "com.framework.selenium.steps.HomeSteps.iPressTheSearchButtonInTheHomePage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 64820000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the links are displayed on the results page",
+            "match": {
+              "location": "com.framework.selenium.steps.ResultsSteps.theLinksAreDisplayedOnTheResultsPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Home Page Search Tests",
+    "description": "",
+    "id": "home-page-search-tests",
+    "keyword": "Feature",
+    "uri": "classpath:features/HomeSearch.feature",
+    "tags": []
+  }
+]
